@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.skillo.automation.courses</groupId>
-  <artifactId>selenium-testing-taf</artifactId>
+  <artifactId>nkp-selenium-taf</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <name>selenium-testing-taf</name>
