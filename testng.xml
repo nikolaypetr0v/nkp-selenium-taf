@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="All Tests">
+        <classes>
+            <class name="annotationsDemo.LoginTests">
+                <methods>
+                    <include name="basicTestAnnotation"/>
+                </methods>
+            </class>
+            <class name="dataProviders.ProvideDemoWithDataProviders">
+                <methods>
+                    <include name="provideParamDemo">
+                        <parameter name="fullName" value="Ivan Ivanov"></parameter>
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+<!--
+<suite name="Web test suite" verbose="1" parallel="methods" thread-count="2">
+    <test name="Parallel Tests">
+        <classes>
+            <class name="parallelTestExecutionDemo.ParallelTests"></class>
+            <class name="parallelTestExecutionDemo.ParallelSecondTests"></class>
+        </classes>
+    </test>
+</suite>-->
