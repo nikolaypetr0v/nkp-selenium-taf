@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="ProvideDEmosForParams" verbose="1" parallel="methods" thread-count="2">
+    <test name="ProvideParamsDemo">
+        <classes>
+            <class name="dataProviders.DataProviderFromXMLDemo">
+                <methods>
+                    <include name="provideSingleParamDemo">
+                        <parameter name="fullName" value="Vasko Vasilev"></parameter>
+                    </include>
+                </methods>
+            </class>
+            <class name="dataProviders.DataProviderFromXMLDemo">
+                <methods>
+                    <include name="testMultiParameters">
+                        <parameter name="firstName" value="Dragancho"></parameter>
+                        <parameter name="lastName" value="Partizancho"></parameter>
+                        <parameter name="age" value="27"></parameter>
+                    </include>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>
