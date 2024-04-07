@@ -1,0 +1,7 @@
+### Windows OS ###
+/.idea/
+/target/
+
+### Unix OS ###
+\.idea\
+\target\
