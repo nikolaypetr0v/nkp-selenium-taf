@@ -9,12 +9,20 @@
   <name>selenium-testing-taf</name>
   <url>http://maven.apache.org</url>
 
+  <repositories>
+    <repository>
+      <id>jcenter</id>
+      <url>https://dl.bintray.com/cbeust/maven/</url>
+    </repository>
+  </repositories>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>14</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <testng.version>7.7.0</testng.version>
+    <selenium.version>4.17.0</selenium.version>
   </properties>
 
   <dependencies>
@@ -26,7 +34,8 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- TESTING LEVEL -->
+    <!-- GUI TESTING FRAMEWORK -->
+
 
     <!-- REPORTING -->
   </dependencies>
@@ -38,6 +47,10 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.1</version>
+          <configuration>
+            <source>${java.version}</source>
+            <target>${java.version}</target>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
